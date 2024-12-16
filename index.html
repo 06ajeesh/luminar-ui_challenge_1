@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Challenge 1</title>
+
+    <!-- internal styling -->
+    <style>
+        .home_image_div {
+            width: 100%;
+            height: 60vh;
+            background-image: url("https://media.gettyimages.com/id/1773272263/video/road-through-the-forest-in-autumn-after-the-rain.jpg?s=640x640&k=20&c=qDOGaCTynVzC2hACBotUBcxQZrbpjyavWwa78z9oc8k=");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .service_image_div::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url("https://www.valthorens.com/app/uploads/2023/09/drone-3v2-t.loubere-ot-val-thorens-3.webp");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: opacity(0.5);
+            z-index: 1;
+        }
+
+        .service_image_div {
+            position: relative;
+            width: 100%;
+            height: 40vh;
+            overflow: hidden;
+        }
+
+        .service_image_div .service_content {
+            position: relative;
+            z-index: 2;
+            color: black;
+        }
+
+        .big_container_img {
+            height: 40vh;
+            width: 100%;
+            background-image: url("https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800");
+        }
+
+        .contact_img::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://w0.peakpx.com/wallpaper/119/298/HD-wallpaper-beautiful-sunset-sky-clouds-sun-grass-sunbeams-hill-sunset-road.jpg");
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        .contact_img {
+            min-height: 60vh;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact_img .form_content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            align-items: center;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0">
+
+    <!-- Nav bar section -->
+    <div class="container-fluid bg-dark">
+        <div class="navbar navbar-expand justify-content-center">
+            <div class="navbar-nav">
+                <div class="nav-link"><a href="#" class="btn text-white">Homepage</a></div>
+                <div class="nav-link"><a href="#" class="btn text-white">About Us</a></div>
+                <div class="nav-link"><a href="#" class="btn text-white">Services</a></div>
+                <div class="nav-link"><a href="#" class="btn text-white">Contact</a></div>
+                <div class="nav-link"><a href="#" class="btn text-white">External</a></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home image section -->
+    <div class="container-fluid p-0">
+        <div class="d-flex flex-column home_image_div justify-content-center align-items-center ">
+            <h1 class="text-white">CONQUER</h1>
+            <h5 class="text-white">Simple Bootstrap Template</h5>
+        </div>
+    </div>
+
+    <!-- home card-->
+    <div class="container d-flex flex-column pt-5 w-75">
+
+        <!-- home cards section 1-->
+        <div class="row">
+            <div class="card col-md-4 p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h2 class="text-success h4">Bootstrap v3.3.6</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex w-100 justify-content-center">
+                        <button class="btn btn-success">Button Green</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4 p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h2 class="text-primary h4">Responsive Design</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex w-100 justify-content-center">
+                        <button class="btn btn-primary">See Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4 p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h2 class="text-secondary h4">Parallax Layout</h2>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex w-100 justify-content-center">
+                        <button class="btn btn-danger">Button Red</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- home cards section 2-->
+        <div class="row pt-3">
+            <div class="col-md-6 card p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center">
+                    <h2 class="h4 text-secondary mb-4">Two Column Left Side</h2>
+                    <p class="text-justify">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, provident. Animi illum earum
+                        quidem expedita, natus sapiente repellat laudantium quibusdam atque perspiciatis fugit. Harum
+                        eum adipisci aut modi quos maiores.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 card p-1 border-0">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h4 text-secondary mb-4">Two Column Right Side</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos saepe nihil quod nostrum aut
+                        quibusdam incidunt omnis! Illo distinctio mollitia eos libero error quaerat sunt....
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex justify-content-end w-100 pe-3">
+                        <button class="btn btn-light border"> <span class="px-2 text-secondary">Read
+                                More</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service section -->
+    <div class="container-fluid p-0 service_image_div d-flex justify-content-center ">
+        <div class="d-flex flex-column  justify-content-center align-items-center w-50 service_content">
+            <h1 class="h3">Our Services</h1>
+            <p class="text-center fw-med">bun iobortik ebs in eusmod libero Ebam a mt attuvan- condgnenturtv
+                tgn quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum excepturi nobis facere
+                neque corrupti.vest Lorem ipsum dolor sit amet consectetur.
+            </p>
+        </div>
+    </div>
+
+    <!-- service cards -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3 p-1 border-0 card">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h5 text-secondary mb-4">Column One</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 p-1 border-0 card">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h5 text-secondary mb-4">Column Two</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex justify-content-center w-100">
+                        <button class="btn btn-light border"> <span class="px-2 text-secondary">Read It</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-1 border-0 card">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h5 text-secondary mb-4">Column Three</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectevtytv
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 p-1 border-0 card">
+                <div class="card-header border-0">
+                    <img src="https://img.pikbest.com/wp/202408/forest-view-of-the-night-sky-with-trees-and_9608004.jpg!sw800"
+                        class="w-100" alt="img1">
+                </div>
+                <div class="card-body d-flex flex-column align-items-center pb-0 mb-0">
+                    <h2 class="h5 text-secondary mb-4">Column Four</h2>
+                    <p class="">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                        dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                        quasi. Aperiam, consectetur a!nt....
+                    </p>
+                </div>
+                <div class="card-footer border-0">
+                    <div class="d-flex justify-content-center w-100">
+                        <button class="btn btn-light border"> <span class="px-2 text-secondary">Details</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- big column -->
+    <div class="container">
+        <div class="card border-0 p-1">
+            <div class="card-header border-0">
+                <div class="big_container_img"></div>
+            </div>
+            <div class="card-body d-flex flex-column pb-0 mb-0">
+                <h2 class="h5 text-secondary mt-3">One Big Column</h2>
+                <p class="">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad numquam voluptatem repudiandae, non
+                    dolorem, omnis labore ipsam sit nostrum accusamus in illo consequatur suscipit placeat eaque
+                    quasi. Aperiam, consectevtytvaccordion-accordion. Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Quas similique aspernatur quibusdam incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                    similique aspernatur quibusdam incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus.
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas similique aspernatur quibusdam
+                    incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
+                    similique aspernatur quibusdam incidunt
+                    inventore nobis vero alias, id iste quisquam deleniti. Quas possimus veritatis dignissimos impedit,
+                    eaque vero labore repellendus.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact form -->
+    <div class="container-fluid p-0 mt-2">
+        <div class="contact_img">
+            <div class="form_content h-100">
+                <h2 class="text-white my-2">Contact Form</h2>
+                <div class="d-flex justify-content-center align-items-center flex-column">
+                    <div class="card w-50 bg-white mb-2" style="--bs-bg-opacity: .5;">
+                        <div class="card-body text-center">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem facere dolore cum nemo
+                                dolor. Omnis, sapiente ad? Beatae sint, nisi ipsa rem sit autem expedita porro doloribus
+                                libero ab, odit cupiditate, asperiores voluptatem vel neque.</p>
+                        </div>
+                    </div>
+                    <div class="row w-50 mt-2 form">
+                        <div class="col-md-6 d-flex flex-column ps-md-0">
+                            <div class="form-floating mb-1 w-100">
+                                <input class="form-control bg-white" style="--bs-bg-opacity:.5" type="text" name="name"
+                                    id="name" placeholder="Enter name">
+                                <label for="name" class="form-label">Name</label>
+                            </div>
+                            <div class="form-floating mb-1 w-100">
+                                <input class="form-control bg-white" style="--bs-bg-opacity:.5" type="text" name="email"
+                                    id="email" placeholder="Enter email">
+                                <label for="email" class="form-label">Email</label>
+                            </div>
+                            <div class="form-floating mb-1 w-100">
+                                <input class="form-control bg-white" style="--bs-bg-opacity:.5" type="text" name="sub"
+                                    id="sub" placeholder="Enter subject">
+                                <label for="sub" class="form-label">Subject</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pe-md-0">
+                            <div class="form-floating">
+                                <textarea name="details" id="details" class="form-control h-auto bg-white"
+                                    style="--bs-bg-opacity:.5" rows="7" cols="5"></textarea>
+                                <label for="details" class="form-label">Your message here ..</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-dark border border-white my-2"><span class="px-2">Send</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Adding bs scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
