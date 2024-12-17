@@ -7,18 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
-    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
-    <!-- https://cdnjs.com/libraries/font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 
     <title>Challenge 1</title>
 
     <!-- internal styling -->
     <style>
+        body{
+            scroll-behavior: smooth;
+        }
         .home_image_div {
             width: 100%;
             height: 60vh;
@@ -46,7 +44,7 @@
         .service_image_div {
             position: relative;
             width: 100%;
-            height: 40vh;
+            height: auto;
             overflow: hidden;
         }
 
@@ -234,7 +232,7 @@
 
     <!-- Service section -->
     <div class="container-fluid p-0 service_image_div d-flex justify-content-center ">
-        <div class="d-flex flex-column  justify-content-center align-items-center w-50 service_content">
+        <div class="d-flex flex-column  justify-content-center align-items-center w-50 service_content py-5">
             <h1 class="h3">Our Services</h1>
             <p class="text-center fw-med">bun iobortik ebs in eusmod libero Ebam a mt attuvan- condgnenturtv
                 tgn quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis earum excepturi nobis facere
@@ -349,17 +347,17 @@
     <!-- contact form -->
     <div class="container-fluid p-0 mt-2">
         <div class="contact_img">
-            <div class="form_content h-100">
+            <div class="form_content">
                 <h2 class="text-white my-2">Contact Form</h2>
-                <div class="d-flex justify-content-center align-items-center flex-column">
-                    <div class="card w-50 bg-white mb-2" style="--bs-bg-opacity: .5;">
-                        <div class="card-body text-center">
+                <div class="d-flex justify-content-center align-items-center flex-column w-100">
+                    <div class="card col-9 col-md-6 bg-white mb-2 border border-danger"  style="--bs-bg-opacity: .5;">
+                        <div class="card-body text-center ">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem facere dolore cum nemo
                                 dolor. Omnis, sapiente ad? Beatae sint, nisi ipsa rem sit autem expedita porro doloribus
                                 libero ab, odit cupiditate, asperiores voluptatem vel neque.</p>
                         </div>
                     </div>
-                    <div class="row w-50 mt-2 form">
+                    <div class="row col-9 col-md-6 mt-3 form">
                         <div class="col-md-6 d-flex flex-column ps-md-0">
                             <div class="form-floating mb-1 w-100">
                                 <input class="form-control bg-white" style="--bs-bg-opacity:.5" type="text" name="name"
